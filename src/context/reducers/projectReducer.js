@@ -1,14 +1,14 @@
-const userAuthReducer = (state = null, action) => {
+const projectReducer = (state = null, action) => {
     switch(action.type){
-        case "SET_USER":
+        case "SET_PROJECTS":
             return {
                 ...state,
-                user: action.user
+                projects: action.projects
             }
-            case "SET_USER_NULL":
+            case "SET_PROJECTS_NULL":
                 return {
                     ...state,
-                    user: null
+                    projects: null
                 }
 
                 default :
@@ -16,4 +16,4 @@ const userAuthReducer = (state = null, action) => {
     }
 };
 
-export default userAuthReducer;
+export default projectReducer;
